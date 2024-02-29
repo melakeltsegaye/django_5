@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+
+{% block main %}
+    <div class="d-flex flex-column align-items-center justify-content-center tex-center mt-5 pt-5 " style="border: 1px solid ;" >
+        <h1 class="title">Get Register or Post your Discription</h1>
+        <p class="w-50 text-center pt-3">
+            A Register Website lets users create accounts for exclusive features, while a Posting Website enables sharing content publicly or within communities, like social media and forums.</p>
+        <div class="d-flex gap-3 p-4">
+            <button type="button" class="btn btn-success btn-lg"><a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="{% url 'post' %}">Post</a></button>
+            <button type="button" class="btn btn-success btn-lg"><a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="{% url 'registercreate' %}">register</a></button>
+        </div>
+    </div>
+
+{% endblock %}
